@@ -1,5 +1,5 @@
-import styled, { RuleSet, css } from "styled-components";
-import { ButtonVariants, ButtonProps } from "./Button.types";
+import styled, { RuleSet, css } from 'styled-components';
+import { ButtonVariants, ButtonProps } from './Button.types';
 
 const variants: Record<ButtonVariants, RuleSet<object>> = {
   solid: css`

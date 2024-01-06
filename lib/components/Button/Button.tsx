@@ -1,10 +1,10 @@
-import React from "react";
-import { ButtonProps } from "./Button.types";
-import { StyledButton } from "./Button.styles";
+import React from 'react';
+import { ButtonProps } from './Button.types';
+import { StyledButton } from './Button.styles';
 
 export const Button: React.FC<ButtonProps> = ({
   children,
-  variant = "solid",
+  variant = 'solid',
   disabled = false,
   ...props
 }) => {
