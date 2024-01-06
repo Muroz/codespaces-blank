@@ -18,7 +18,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* To be able to use globals in the tests */
+    "types": ["vitest/globals"]
   },
   "include": ["lib"],
   "references": [{ "path": "./tsconfig.node.json" }]

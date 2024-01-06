@@ -1,9 +1,16 @@
-import styled from "styled-components";
+import React from "react";
+import { ButtonProps } from "./Button.types";
+import { StyledButton } from "./Button.styles";
 
-const StyledButton = styled.button`
-  padding: 1rem;
-`;
-
-export const Button = () => {
-  return <StyledButton>Button</StyledButton>;
+export const Button: React.FC<ButtonProps> = ({
+  children,
+  variant = "solid",
+  disabled = false,
+  ...props
+}) => {
+  return (
+    <StyledButton variant={variant} disabled={disabled} {...props}>
+      {children}
+    </StyledButton>
+  );
 };
